@@ -154,6 +154,11 @@ export interface FrameCardTokenizationFailedEvent {
     message: string;
 }
 
+export interface FrameValueChangedEvent {
+    element: FrameElementIdentifer;
+    value: string;
+}
+
 export interface FramesProps {
     config: FramesConfig;
     /**
@@ -190,6 +195,8 @@ export interface FramesProps {
      * @memberof FramesProps
      */
     frameValidationChanged?: (e: FrameValidationChangedEvent) => void;
+
+    frameValueChanged?: (e: FrameValueChangedEvent) => void;
 
     /**
      * Triggered when a valid payment method is detected based on the card number being entered. Use this event to change the card icon.

@@ -53,6 +53,7 @@ export class Frames extends Component<FramesProps> {
             frameFocus: this.props.frameFocus,
             frameBlur: this.props.frameBlur,
             frameValidationChanged: this.props.frameValidationChanged,
+            frameValueChanged: this.props.frameValueChanged,
             paymentMethodChanged: this.props.paymentMethodChanged,
             cardValidationChanged: this.props.cardValidationChanged,
             cardSubmitted: this.props.cardSubmitted,
